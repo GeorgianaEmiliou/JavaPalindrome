@@ -26,14 +26,14 @@ public class Palindrome {
                 count++;
             }
         }
-        String newPalindrome = "";
+        //String newPalindrome = "";
         String longestWord = palindromeWords[0];
         for(int i =0 ; i< palindromeWords.length; i++){
             if(palindromeWords[i].length() > longestWord.length()){
                 longestWord = palindromeWords[i];
             }
-            /*if(palindromeWords[i].length() == longestWord.length()){
-                newPalindrome = palindromeWords[i] + " and " + longestWord;
+            /*else if(palindromeWords[i].length() == longestWord.length()){
+                longestWord = palindromeWords[i] + " and " + longestWord;
             }*/
         }
         /*if(newPalindrome.length() > longestWord.length()){
